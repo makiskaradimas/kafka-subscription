@@ -1,0 +1,10 @@
+bootstrap.servers=kafka:9092
+zookeeper.connect=zookeeper:2181
+acks=all
+retries=0
+batch.size=1
+auto.commit.interval.ms=1000
+linger.ms=0
+key.serializer=org.apache.kafka.common.serialization.BytesSerializer
+value.serializer=io.github.makiskaradimas.dataenrichment.serdes.JsonPOJOSerializer
+block.on.buffer.full=true
